@@ -123,11 +123,11 @@ export default function Home() {
             Let&apos;s connect
           </Button>
         </div>
-      </div>
+      
       {/* end home page */}
 
       {/* projects page */}
-      <div className="relative mt-6 px-4 flex flex-col gap-2 md:gap-2 xl:gap-4">
+      <div>
         <div className="relative flex flex-col md:flex-row max-w-4xl mx-auto border-2 border-blue-300 hover:shadow-md hover:shadow-purple-400 rounded-xl">
           <div className="relative md:w-[50%] w-full h-full md:p-12 p-6">
             <h1 className="text-xl md:text-2xl lg:text-3xl mb-2">
@@ -386,7 +386,7 @@ export default function Home() {
       {/* end projects page */}
 
       {/* about page */}
-      <div className="relative flex flex-col gap-4 md:gap-6 xl:gap-8 mx-auto max-w-4xl mt-2 xl:mt-8 px-4">
+      <div>
         {/* start of introduction */}
         <div>
           <div className="flex flex-col bg-white border-2 border-blue-300 dark:bg-gray-800 text-gray-800 dark:text-gray-200 rounded-xl p-3 xl:p-6">
@@ -622,7 +622,7 @@ export default function Home() {
 
       {/* contact page */}
 
-      <div className="px-4 sm:px-6 md:px-8 mt-4">
+      <div>
         <div className="relative flex flex-col xl:p-4 xl:mx-auto justify-center border border-blue-200 xl:hover:shadow-md xl:hover:shadow-green-300 max-w-full xl:max-w-4xl rounded-xl p-4 xl:m-16 text-gray-700 dark:text-white">
           <h2 className="text-xl xl:text-2xl font-bold text-center mb-4 sm:mb-6">
             Contact Me
@@ -698,6 +698,8 @@ export default function Home() {
       </div>
 
       {/* end contact page */}
+    </div>
+
     </div>
   );
 }

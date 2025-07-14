@@ -35,13 +35,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={`font-poppins ${
-          isDarkMode ? "dark:bg-gray-900 dark:text-gray-100" : ""
+          isDarkMode ? "dark:bg-[#0d0d0d] dark:text-gray-100" : ""
         }`}
       >
         <NavigationBar />
         <button
           onClick={toggleDarkMode}
-          className="fixed top-4 right-4 bg-gray-300 dark:bg-gray-800 text-black dark:text-white p-2 rounded-full shadow-md transition"
+          className="fixed top-4 right-4 bg-gray-300 dark:bg-[#0d0d0d] text-black dark:text-white p-2 rounded-full shadow-md transition"
         >
           {isDarkMode ? "🌞" : "🌙"}
         </button>
