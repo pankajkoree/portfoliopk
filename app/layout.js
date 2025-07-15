@@ -4,7 +4,7 @@ import "./globals.css";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`font-poppins dark:bg-[#0d0d0d]`}>
+      <body className={`font-poppins dark:bg-[#18181B]`}>
         {children}
         <Toaster position="top-center" reverseOrder={false} />
       </body>
