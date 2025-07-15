@@ -1,7 +1,10 @@
 "use client";
 
 import NavigationBar from "@/components/NavigationBar";
+import Image from "next/image";
 import { useState } from "react";
+import lightMode from "@/public/lightMode.png";
+import darkMode from "@/public/darkMode.png";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -24,7 +27,27 @@ export default function Home() {
             <NavigationBar />
           </div>
           <div className="relative flex hover:cursor-pointer">
-            <p onClick={changeTheme}>{isDarkMode ? "🌞" : "🌙"}</p>
+            <div onClick={changeTheme}>
+              {isDarkMode ? (
+                <div>
+                  <Image
+                    src={lightMode}
+                    alt="light mode"
+                    width={16}
+                    height={16}
+                  />
+                </div>
+              ) : (
+                <div>
+                  <Image
+                    src={darkMode}
+                    alt="dark mode"
+                    width={16}
+                    height={16}
+                  />
+                </div>
+              )}
+            </div>
           </div>
         </div>
 
