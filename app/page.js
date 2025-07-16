@@ -2,7 +2,7 @@
 
 // next lib imported
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // components imported
 import NavigationBar from "@/components/NavigationBar";
@@ -11,6 +11,10 @@ import HomePage from "@/components/Home";
 // images imported
 import lightMode from "@/public/lightMode.png";
 import darkMode from "@/public/darkMode.png";
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -24,6 +28,21 @@ export default function Home() {
       localStorage.setItem("theme", "light");
     }
   };
+
+  useEffect(() => {
+    const path = window.location.pathname;
+
+    const validPaths = ["/", "/skills", "/projects", "/contact"];
+    const id = path === "/" ? "home" : path.slice(1); // remove leading slash
+
+    if (validPaths.includes(path)) {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, []);
+
   return (
     <div className="relative flex justify-center w-full">
       <div className="relative flex flex-col justify-center w-[50%]">
@@ -59,8 +78,33 @@ export default function Home() {
         {/* end navigation bar */}
 
         {/* home */}
-        <HomePage />
+        <div id="home">
+          <HomePage />
+        </div>
         {/* home */}
+
+        {/* skills */}
+        <div id="skills">
+          <Skills />
+        </div>
+        {/* skills */}
+
+        {/* projects */}
+        <div id="projects">
+          <Projects />
+        </div>
+        {/* projects */}
+
+        {/* contact */}
+        <div id="contact">
+          <Contact />
+        </div>
+        {/* contact */}
+
+        {/* scroll to top */}
+        <ScrollToTop />
+
+        {/* scroll to top */}
       </div>
     </div>
   );

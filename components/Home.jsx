@@ -1,6 +1,6 @@
 const HomePage = () => {
   return (
-    <div>
+    <div className="relative flex bg-green-400 h-[1200px]">
       <p>this is home page</p>
     </div>
   );
