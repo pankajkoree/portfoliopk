@@ -1,8 +1,14 @@
 "use client";
 
-import NavigationBar from "@/components/NavigationBar";
+// next lib imported
 import Image from "next/image";
 import { useState } from "react";
+
+// components imported
+import NavigationBar from "@/components/NavigationBar";
+import HomePage from "@/components/Home";
+
+// images imported
 import lightMode from "@/public/lightMode.png";
 import darkMode from "@/public/darkMode.png";
 
@@ -20,7 +26,7 @@ export default function Home() {
   };
   return (
     <div className="relative flex justify-center w-full">
-      <div className="relative flex justify-center w-[50%]">
+      <div className="relative flex flex-col justify-center w-[50%]">
         {/* navigation bar */}
         <div className="relative flex items-center justify-center w-full xl:gap-12">
           <div className="relative flex justify-center">
@@ -50,8 +56,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-
         {/* end navigation bar */}
+
+        {/* home */}
+        <HomePage />
+        {/* home */}
       </div>
     </div>
   );
