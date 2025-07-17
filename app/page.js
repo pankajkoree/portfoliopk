@@ -47,7 +47,7 @@ export default function Home() {
     <div className="relative flex justify-center w-full">
       <div className="relative flex flex-col justify-center w-[50%]">
         {/* navigation bar */}
-        <div className="relative flex items-center justify-center w-full xl:gap-12">
+        <div className="sticky top-0 z-50 backdrop-blur flex items-center justify-center w-full xl:gap-12 py-2">
           <div className="relative flex justify-center">
             <NavigationBar />
           </div>
