@@ -8,9 +8,6 @@ import { useEffect, useState } from "react";
 import NavigationBar from "@/components/NavigationBar";
 import HomePage from "@/components/Home";
 
-// images imported
-import lightMode from "@/public/lightMode.png";
-import darkMode from "@/public/darkMode.png";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
@@ -56,7 +53,7 @@ export default function Home() {
               {isDarkMode ? (
                 <div>
                   <Image
-                    src={lightMode}
+                    src="/lightmode.png"
                     alt="light mode"
                     width={16}
                     height={16}
@@ -65,7 +62,7 @@ export default function Home() {
               ) : (
                 <div>
                   <Image
-                    src={darkMode}
+                    src="/darkmode.png"
                     alt="dark mode"
                     width={16}
                     height={16}
