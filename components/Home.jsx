@@ -1,12 +1,13 @@
 const HomePage = () => {
   return (
-    <div className="relative flex bg-green-400 h-[1200px]">
-      <p>
-        Hey,
+    <div className="relative flex">
+      <p className="text-3xl">
+        Hey, I&apos;m Pankaj Kori
         <br />
-        I&apos;m Pankaj Kori
-        <br />
-        Software Engineer from Nepal 
+        <span className="text-xl">
+          Software Engineer from Nepal buidling Saas products and web
+          applications.
+        </span>
       </p>
     </div>
   );
