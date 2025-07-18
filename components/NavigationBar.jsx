@@ -1,8 +1,6 @@
-import { useRouter } from "next/navigation";
 import { Button } from "./ui/button";
 
 const NavigationBar = () => {
-  const router = useRouter();
   const handleDirectory = (id, path) => {
     window.history.pushState(null, "", path);
 
@@ -12,6 +10,7 @@ const NavigationBar = () => {
       component.scrollIntoView({ behaviour: "smooth" });
     }
   };
+
   return (
     <div className="">
       <Button variant="nav" onClick={() => handleDirectory("home", "/")}>
