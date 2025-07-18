@@ -12,21 +12,37 @@ const Skills = () => {
           </p>
         </div>
         <div>
-          <Image
-            src="/javascript.png"
-            alt="javascript"
-            width={20}
-            height={20}
-          />
-          <Image src="/tailwind.png" alt="tailwind" width={20} height={20} />
-          <Image
-            src="/typescript.png"
-            alt="typescript"
-            width={20}
-            height={20}
-          />
-          <Image src="/react.png" alt="react" width={20} height={20} />
-          <Image src="/nextjs.png" alt="nextjs" width={20} height={20} />
+          <div>
+            <Image
+              src="/javascript.png"
+              alt="javascript"
+              width={20}
+              height={20}
+            />
+            <p>JavaScript</p>
+          </div>
+
+          <div>
+            <Image src="/tailwind.png" alt="tailwind" width={20} height={20} />
+            <p>Tailwind</p>
+          </div>
+          <div>
+            <Image
+              src="/typescript.png"
+              alt="typescript"
+              width={20}
+              height={20}
+            />
+            <p>TypeScript</p>
+          </div>
+          <div>
+            <Image src="/react.png" alt="react" width={20} height={20} />
+            <p>React</p>
+          </div>
+          <div>
+            <Image src="/nextjs.png" alt="nextjs" width={20} height={20} />
+            <p>NextJS</p>
+          </div>
         </div>
       </div>
       {/* frontend */}
