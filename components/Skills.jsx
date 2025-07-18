@@ -1,11 +1,11 @@
 import Image from "next/image";
 
 // images
-import react from "@/public/React.png";
-import tailwind from "@/public/Tailwind.png";
-import javascript from "@/public/JavaScript.png";
-import typescript from "@/public/TypeScript.png";
-import nextjs from "@/public/NextJS.png";
+import react from "@/public/react.png";
+import tailwind from "@/public/tailwind.png";
+import javascript from "@/public/javaScript.png";
+import typescript from "@/public/typeScript.png";
+import nextjs from "@/public/nextJS.png";
 const Skills = () => {
   return (
     <div className="relative flex flex-col">
@@ -19,6 +19,10 @@ const Skills = () => {
         </div>
         <div>
           <Image src={javascript} alt="javascript" />
+          <Image src={tailwind} alt="tailwind" />
+          <Image src={typescript} alt="typescript" />
+          <Image src={react} alt="react" />
+          <Image src={nextjs} alt="nextjs" />
         </div>
       </div>
       {/* frontend */}
