@@ -2,7 +2,7 @@ const HomePage = () => {
   return (
     <div className="relative flex">
       <p className="text-3xl">
-        Hey, I&apos;m Pankaj Kori
+        <span className="font-bold">Hey, I&apos;m Pankaj Kori</span>
         <br />
         <span className="text-xl">
           Software Engineer from Nepal buidling Saas products and web

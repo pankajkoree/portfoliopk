@@ -7,7 +7,6 @@ import { useEffect, useState } from "react";
 // components imported
 import NavigationBar from "@/components/NavigationBar";
 import HomePage from "@/components/Home";
-
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
@@ -30,7 +29,7 @@ export default function Home() {
     const path = window.location.pathname;
 
     const validPaths = ["/", "/skills", "/projects", "/contact"];
-    const id = path === "/" ? "home" : path.slice(1); // remove leading slash
+    const id = path === "/" ? "home" : path.slice(1);
 
     if (validPaths.includes(path)) {
       const section = document.getElementById(id);
@@ -42,7 +41,7 @@ export default function Home() {
 
   return (
     <div className="relative flex justify-center w-full">
-      <div className="relative flex flex-col justify-center w-[50%]">
+      <div className="relative flex flex-col justify-center w-[40%]">
         {/* navigation bar */}
         <div className="sticky top-0 z-50 backdrop-blur flex items-center justify-center w-full xl:gap-12 py-2 h-16">
           <div className="relative flex justify-center">
