@@ -92,7 +92,7 @@ export default function Home() {
           {/* projects */}
 
           {/* contact */}
-          <div id="contact" className="relative flex scroll-mt-16 top-8">
+          <div id="contact" className="relative flex scroll-mt-16 top-24">
             <Contact />
           </div>
           {/* contact */}
