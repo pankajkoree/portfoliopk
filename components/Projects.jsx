@@ -76,70 +76,28 @@ const Projects = () => {
           {/* description and image */}
           <div className="ralative flex items-center">
             <p>
-              Wide variety of footwear styles for all occasions, high-quality
-              materials ensuring durability and comfort, and fast, reliable
-              delivery to your doorstep.
-            </p>
-
-            <Image
-              src="/currencyconvertor.png"
-              alt="currency convertor"
-              width={80}
-              height={80}
-            />
-          </div>
-          {/* end description and image */}
-        </div>
-        {/* end project 2 */}
-
-        {/* project 2 */}
-        <div className="relative flex flex-col p-2">
-          {/* title and navigation */}
-          <div className="relative flex w-full justify-between">
-            <div className="font-semibold">
-              <p>The Shoe Company</p>
-            </div>
-            <div className="relative flex gap-4">
-              <Link
-                href="https://currencyconvertorreactapp.netlify.app/"
-                target="_blank"
-              >
-                <p className="hover:text-cyan-600">Github ⎆</p>
-              </Link>
-              <Link
-                href="https://theshoecompany-tailwind.netlify.app/"
-                target="_blank"
-              >
-                <p className="hover:text-cyan-600">Live ⎆</p>
-              </Link>
-            </div>
-          </div>
-          {/* end title and navigation */}
-          {/* description and image */}
-          <div className="ralative flex items-center">
-            <p>
-              Wide variety of footwear styles for all occasions, high-quality
-              materials ensuring durability and comfort, and fast, reliable
-              delivery to your doorstep.
+              Durable, comfortable footwear for all occasions with fast,
+              reliable delivery.
             </p>
 
             <Image
               src="/theshoecompany.png"
-              alt="currency convertor"
+              alt="the shoe company"
               width={80}
               height={80}
+              className="rounded-full object-cover"
             />
           </div>
           {/* end description and image */}
         </div>
         {/* end project 2 */}
 
-        {/* project 2 */}
-        <div className="relative flex flex-col p-2">
+        {/* project 3 */}
+        <div className="relative flex flex-col p-2 transition-transform duration-300 ease-in-out hover:translate-x-2">
           {/* title and navigation */}
           <div className="relative flex w-full justify-between">
             <div className="font-semibold">
-              <p>The Shoe Company</p>
+              <p>Movie Details Search</p>
             </div>
             <div className="relative flex gap-4">
               <Link
@@ -149,7 +107,7 @@ const Projects = () => {
                 <p className="hover:text-cyan-600">Github ⎆</p>
               </Link>
               <Link
-                href="https://theshoecompany-tailwind.netlify.app/"
+                href="https://moviesearchappomdb.netlify.app/"
                 target="_blank"
               >
                 <p className="hover:text-cyan-600">Live ⎆</p>
@@ -160,28 +118,28 @@ const Projects = () => {
           {/* description and image */}
           <div className="ralative flex items-center">
             <p>
-              Wide variety of footwear styles for all occasions, high-quality
-              materials ensuring durability and comfort, and fast, reliable
-              delivery to your doorstep.
+              Search movies by title, genre, or actor with ratings and reviews —
+              optimized for fast, accurate results.
             </p>
 
             <Image
-              src="/currencyconvertor.png"
-              alt="currency convertor"
+              src="/moviedetailssearch.png"
+              alt="movie details search"
               width={80}
               height={80}
+              className="rounded-full object-cover"
             />
           </div>
           {/* end description and image */}
         </div>
-        {/* end project 2 */}
+        {/* end project 3 */}
 
-        {/* project 2 */}
-        <div className="relative flex flex-col p-2">
+        {/* project 4 */}
+        <div className="relative flex flex-col p-2 transition-transform duration-300 ease-in-out hover:translate-x-2">
           {/* title and navigation */}
           <div className="relative flex w-full justify-between">
             <div className="font-semibold">
-              <p>The Shoe Company</p>
+              <p>Focus On Today</p>
             </div>
             <div className="relative flex gap-4">
               <Link
@@ -191,7 +149,7 @@ const Projects = () => {
                 <p className="hover:text-cyan-600">Github ⎆</p>
               </Link>
               <Link
-                href="https://theshoecompany-tailwind.netlify.app/"
+                href="https://focusontoday-vanillajs.netlify.app/"
                 target="_blank"
               >
                 <p className="hover:text-cyan-600">Live ⎆</p>
@@ -202,28 +160,28 @@ const Projects = () => {
           {/* description and image */}
           <div className="ralative flex items-center">
             <p>
-              Wide variety of footwear styles for all occasions, high-quality
-              materials ensuring durability and comfort, and fast, reliable
-              delivery to your doorstep.
+              Focus on your top task, break it into steps, and review progress
+              by day&apos;s end to mark it complete.
             </p>
 
             <Image
-              src="/currencyconvertor.png"
-              alt="currency convertor"
+              src="/focusontoday.png"
+              alt="focus on today"
               width={80}
               height={80}
+              className="rounded-full object-cover"
             />
           </div>
           {/* end description and image */}
         </div>
-        {/* end project 2 */}
+        {/* end project 4 */}
 
-        {/* project 2 */}
-        <div className="relative flex flex-col p-2">
+        {/* project 5 */}
+        <div className="relative flex flex-col p-2 transition-transform duration-300 ease-in-out hover:translate-x-2">
           {/* title and navigation */}
           <div className="relative flex w-full justify-between">
             <div className="font-semibold">
-              <p>The Shoe Company</p>
+              <p>The Country Project</p>
             </div>
             <div className="relative flex gap-4">
               <Link
@@ -233,7 +191,7 @@ const Projects = () => {
                 <p className="hover:text-cyan-600">Github ⎆</p>
               </Link>
               <Link
-                href="https://theshoecompany-tailwind.netlify.app/"
+                href="https://countryproject-manual-deploy.netlify.app/"
                 target="_blank"
               >
                 <p className="hover:text-cyan-600">Live ⎆</p>
@@ -244,28 +202,28 @@ const Projects = () => {
           {/* description and image */}
           <div className="ralative flex items-center">
             <p>
-              Wide variety of footwear styles for all occasions, high-quality
-              materials ensuring durability and comfort, and fast, reliable
-              delivery to your doorstep.
+              Detailed economic info with live GDP, inflation, and growth data —
+              optimized for exploring stats over time.
             </p>
 
             <Image
-              src="/currencyconvertor.png"
-              alt="currency convertor"
+              src="/thecountryproject.png"
+              alt="The Country Project"
               width={80}
               height={80}
+              className="rounded-full object-cover"
             />
           </div>
           {/* end description and image */}
         </div>
-        {/* end project 2 */}
+        {/* end project 5 */}
 
-        {/* project 2 */}
-        <div className="relative flex flex-col p-2">
+        {/* project 6 */}
+        <div className="relative flex flex-col p-2 transition-transform duration-300 ease-in-out hover:translate-x-2">
           {/* title and navigation */}
           <div className="relative flex w-full justify-between">
             <div className="font-semibold">
-              <p>The Shoe Company</p>
+              <p>The HamBurger</p>
             </div>
             <div className="relative flex gap-4">
               <Link
@@ -275,7 +233,7 @@ const Projects = () => {
                 <p className="hover:text-cyan-600">Github ⎆</p>
               </Link>
               <Link
-                href="https://theshoecompany-tailwind.netlify.app/"
+                href="https://hamburgermenuappnweb.netlify.app/"
                 target="_blank"
               >
                 <p className="hover:text-cyan-600">Live ⎆</p>
@@ -286,21 +244,106 @@ const Projects = () => {
           {/* description and image */}
           <div className="ralative flex items-center">
             <p>
-              Wide variety of footwear styles for all occasions, high-quality
-              materials ensuring durability and comfort, and fast, reliable
-              delivery to your doorstep.
+              Made with 100% fresh chicken patties, perfectly grilled for
+              maximum flavor, and customizable with a variety of toppings.
             </p>
 
             <Image
-              src="/currencyconvertor.png"
-              alt="currency convertor"
+              src="/thehamburger.png"
+              alt="thehamburger"
               width={80}
               height={80}
+              className="rounded-full object-cover"
             />
           </div>
           {/* end description and image */}
         </div>
-        {/* end project 2 */}
+        {/* end project 6 */}
+
+        {/* project 7 */}
+        <div className="relative flex flex-col p-2 transition-transform duration-300 ease-in-out hover:translate-x-2">
+          {/* title and navigation */}
+          <div className="relative flex w-full justify-between">
+            <div className="font-semibold">
+              <p>The Weather App</p>
+            </div>
+            <div className="relative flex gap-4">
+              <Link
+                href="https://currencyconvertorreactapp.netlify.app/"
+                target="_blank"
+              >
+                <p className="hover:text-cyan-600">Github ⎆</p>
+              </Link>
+              <Link
+                href="https://weatherappchallengejs.netlify.app/"
+                target="_blank"
+              >
+                <p className="hover:text-cyan-600">Live ⎆</p>
+              </Link>
+            </div>
+          </div>
+          {/* end title and navigation */}
+          {/* description and image */}
+          <div className="ralative flex items-center">
+            <p>
+              Provides real-time weather updates for any location, with accurate
+              hourly and daily forecasts — optimized for fast and easy tracking.
+            </p>
+
+            <Image
+              src="/theweatherapp.png"
+              alt="The Weather App"
+              width={80}
+              height={80}
+              className="rounded-full object-cover"
+            />
+          </div>
+          {/* end description and image */}
+        </div>
+        {/* end project 7 */}
+
+        {/* project 8 */}
+        <div className="relative flex flex-col p-2 transition-transform duration-300 ease-in-out hover:translate-x-2">
+          {/* title and navigation */}
+          <div className="relative flex w-full justify-between">
+            <div className="font-semibold">
+              <p>Dashboard App</p>
+            </div>
+            <div className="relative flex gap-4">
+              <Link
+                href="https://currencyconvertorreactapp.netlify.app/"
+                target="_blank"
+              >
+                <p className="hover:text-cyan-600">Github ⎆</p>
+              </Link>
+              <Link
+                href="https://dashboard-tesla-ui.vercel.app/dashboard"
+                target="_blank"
+              >
+                <p className="hover:text-cyan-600">Live ⎆</p>
+              </Link>
+            </div>
+          </div>
+          {/* end title and navigation */}
+          {/* description and image */}
+          <div className="ralative flex items-center">
+            <p>
+              Track and manage topics of interest in real time, receive timely
+              updates and insights, all through a simple and intuitive
+              interface.
+            </p>
+
+            <Image
+              src="/thedashboard.png"
+              alt="Dashboard App"
+              width={80}
+              height={80}
+              className="rounded-full object-cover"
+            />
+          </div>
+          {/* end description and image */}
+        </div>
+        {/* end project 8 */}
       </div>
       {/* end projects */}
     </div>
