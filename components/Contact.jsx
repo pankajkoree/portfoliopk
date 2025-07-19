@@ -2,7 +2,6 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import { Textarea } from "./ui/textarea";
-import toast from "react-hot-toast";
 
 const Contact = () => {
   const handleSubmit = async (e) => {
@@ -14,7 +13,7 @@ const Contact = () => {
         Accept: "application/json",
       },
       body: JSON.stringify({
-        access_key: process.env.ACCESS_KEY,
+        access_key: process.env.NEXT_PUBLIC_ACCESS_KEY,
         name: e.target.name.value,
         email: e.target.email.value,
         message: e.target.message.value,
@@ -22,10 +21,7 @@ const Contact = () => {
     });
     const result = await response.json();
     if (result.success) {
-      toast.success("Form submitted successfully");
       e.target.reset();
-    } else {
-      toast.error("form submission failed");
     }
   };
   return (
