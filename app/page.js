@@ -80,19 +80,19 @@ export default function Home() {
         {/* home */}
 
         {/* skills */}
-        <div id="skills" className="scroll-mt-16">
+        <div id="skills" className="relative flex scroll-mt-16 top-4">
           <Skills />
         </div>
         {/* skills */}
 
         {/* projects */}
-        <div id="projects" className="scroll-mt-16">
+        <div id="projects" className="relative flex scroll-mt-16 top-4">
           <Projects />
         </div>
         {/* projects */}
 
         {/* contact */}
-        <div id="contact" className="scroll-mt-16">
+        <div id="contact" className="relative flex scroll-mt-16 top-4">
           <Contact />
         </div>
         {/* contact */}
