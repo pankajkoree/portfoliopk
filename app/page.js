@@ -10,7 +10,6 @@ import HomePage from "@/components/Home";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
-import ScrollToTop from "@/components/ScrollToTop";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -41,7 +40,7 @@ export default function Home() {
 
   return (
     <div className="relative flex justify-center w-full">
-      <div className="relative flex flex-col justify-center w-[40%]">
+      <div className="relative flex flex-col justify-center w-[30%]">
         {/* navigation bar */}
         <div className="sticky top-0 z-50 backdrop-blur flex items-center justify-center w-full xl:gap-12 py-2 h-16">
           <div className="relative flex justify-center">
@@ -73,34 +72,31 @@ export default function Home() {
         </div>
         {/* end navigation bar */}
 
-        {/* home */}
-        <div id="home" className="scroll-mt-16">
-          <HomePage />
+        <div className="pt-16">
+          {/* home */}
+          <div id="home" className="scroll-mt-16">
+            <HomePage />
+          </div>
+          {/* home */}
+
+          {/* skills */}
+          <div id="skills" className="relative flex scroll-mt-16">
+            <Skills />
+          </div>
+          {/* skills */}
+
+          {/* projects */}
+          <div id="projects" className="relative flex scroll-mt-16">
+            <Projects />
+          </div>
+          {/* projects */}
+
+          {/* contact */}
+          <div id="contact" className="relative flex scroll-mt-16">
+            <Contact />
+          </div>
+          {/* contact */}
         </div>
-        {/* home */}
-
-        {/* skills */}
-        <div id="skills" className="relative flex scroll-mt-16 top-4">
-          <Skills />
-        </div>
-        {/* skills */}
-
-        {/* projects */}
-        <div id="projects" className="relative flex scroll-mt-16 top-4">
-          <Projects />
-        </div>
-        {/* projects */}
-
-        {/* contact */}
-        <div id="contact" className="relative flex scroll-mt-16 top-4">
-          <Contact />
-        </div>
-        {/* contact */}
-
-        {/* scroll to top */}
-        <ScrollToTop />
-
-        {/* scroll to top */}
       </div>
     </div>
   );

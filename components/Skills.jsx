@@ -3,13 +3,13 @@ import Image from "next/image";
 const Skills = () => {
   return (
     <div className="relative flex flex-col">
-      <h1 className="text-2xl font-bold">Skills</h1>
+      <h1 className="text-xl font-bold">Skills</h1>
       {/* frontend */}
       <div>
         {/* heading */}
         <div>
           <h1 className="text-xl font-bold">✨Frontend</h1>
-          <p className="text-lg mb-6">
+          <p className="text-xl">
             Building responsive and modern interfaces
           </p>
         </div>
@@ -78,7 +78,7 @@ const Skills = () => {
         {/* heading */}
         <div>
           <h1 className="text-xl font-bold">✨Backend</h1>
-          <p className="text-lg mb-6">
+          <p className="text-xl">
             Creating robust server-side applications
           </p>
         </div>
@@ -136,7 +136,7 @@ const Skills = () => {
         {/* heading */}
         <div>
           <h1 className="text-xl font-bold">✨Tools & Software</h1>
-          <p className="text-lg mb-6">
+          <p className="text-xl">
             Utilizing tools and software to enhance productivity
           </p>
         </div>

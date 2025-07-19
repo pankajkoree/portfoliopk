@@ -3,7 +3,7 @@ import { Barlow } from "next/font/google";
 
 const barlow = Barlow({
   subsets: ["latin"],
-  weight: "500",
+  weight: "400",
 });
 
 export default function RootLayout({ children }) {
