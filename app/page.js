@@ -42,7 +42,7 @@ export default function Home() {
     <div className="relative flex justify-center w-full">
       <div className="relative flex flex-col justify-center w-[30%]">
         {/* navigation bar */}
-        <div className="sticky top-0 z-50 backdrop-blur flex items-center justify-center w-full xl:gap-12 py-2 h-16">
+        <div className="sticky top-0 z-50 flex items-center justify-center w-full xl:gap-12 p-8 h-12 backdrop-blur-xl">
           <div className="relative flex justify-center">
             <NavigationBar />
           </div>
@@ -72,7 +72,7 @@ export default function Home() {
         </div>
         {/* end navigation bar */}
 
-        <div className="pt-16">
+        <div>
           {/* home */}
           <div id="home" className="scroll-mt-16">
             <HomePage />
@@ -80,19 +80,19 @@ export default function Home() {
           {/* home */}
 
           {/* skills */}
-          <div id="skills" className="relative flex scroll-mt-16">
+          <div id="skills" className="relative flex scroll-mt-16 top-12">
             <Skills />
           </div>
           {/* skills */}
 
           {/* projects */}
-          <div id="projects" className="relative flex scroll-mt-16">
+          <div id="projects" className="relative flex scroll-mt-16 top-24">
             <Projects />
           </div>
           {/* projects */}
 
           {/* contact */}
-          <div id="contact" className="relative flex scroll-mt-16">
+          <div id="contact" className="relative flex scroll-mt-16 top-8">
             <Contact />
           </div>
           {/* contact */}

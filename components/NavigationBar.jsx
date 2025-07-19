@@ -12,7 +12,7 @@ const NavigationBar = () => {
   };
 
   return (
-    <div className="">
+    <div>
       <Button variant="nav" onClick={() => handleDirectory("home", "/")}>
         Home
       </Button>
