@@ -10,6 +10,7 @@ import HomePage from "@/components/Home";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -42,7 +43,7 @@ export default function Home() {
     <div className="relative flex justify-center w-full">
       <div className="relative flex flex-col justify-center w-[30%]">
         {/* navigation bar */}
-        <div className="sticky top-0 z-50 flex items-center justify-center w-full xl:gap-12 p-8 h-12 backdrop-blur-xl">
+        <div className="sticky top-0 z-50 flex items-center justify-center w-full xl:gap-12 p-8 h-12 backdrop-blur-xl bg-white dark:bg-[#18181B]">
           <div className="relative flex justify-center">
             <NavigationBar />
           </div>
@@ -96,6 +97,17 @@ export default function Home() {
             <Contact />
           </div>
           {/* contact */}
+
+          {/* footer */}
+
+          <div
+            id="contact"
+            className="relative flex justify-center scroll-mt-16 top-24"
+          >
+            <Footer />
+          </div>
+
+          {/* end footer */}
         </div>
       </div>
     </div>

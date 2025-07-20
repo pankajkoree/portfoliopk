@@ -22,13 +22,13 @@ const Projects = () => {
                 href="https://currencyconvertorreactapp.netlify.app/"
                 target="_blank"
               >
-                <p className="hover:text-cyan-600">Github ⎆</p>
+                <p className="hover:text-cyan-600">Github </p>
               </Link>
               <Link
                 href="https://currencyconvertorreactapp.netlify.app/"
                 target="_blank"
               >
-                <p className="hover:text-cyan-600">Live ⎆</p>
+                <p className="hover:text-cyan-600">Live </p>
               </Link>
             </div>
           </div>
@@ -62,13 +62,13 @@ const Projects = () => {
                 href="https://currencyconvertorreactapp.netlify.app/"
                 target="_blank"
               >
-                <p className="hover:text-cyan-600">Github ⎆</p>
+                <p className="hover:text-cyan-600">Github </p>
               </Link>
               <Link
                 href="https://theshoecompany-tailwind.netlify.app/"
                 target="_blank"
               >
-                <p className="hover:text-cyan-600">Live ⎆</p>
+                <p className="hover:text-cyan-600">Live </p>
               </Link>
             </div>
           </div>
@@ -104,13 +104,13 @@ const Projects = () => {
                 href="https://currencyconvertorreactapp.netlify.app/"
                 target="_blank"
               >
-                <p className="hover:text-cyan-600">Github ⎆</p>
+                <p className="hover:text-cyan-600">Github </p>
               </Link>
               <Link
                 href="https://moviesearchappomdb.netlify.app/"
                 target="_blank"
               >
-                <p className="hover:text-cyan-600">Live ⎆</p>
+                <p className="hover:text-cyan-600">Live </p>
               </Link>
             </div>
           </div>
@@ -146,13 +146,13 @@ const Projects = () => {
                 href="https://currencyconvertorreactapp.netlify.app/"
                 target="_blank"
               >
-                <p className="hover:text-cyan-600">Github ⎆</p>
+                <p className="hover:text-cyan-600">Github </p>
               </Link>
               <Link
                 href="https://focusontoday-vanillajs.netlify.app/"
                 target="_blank"
               >
-                <p className="hover:text-cyan-600">Live ⎆</p>
+                <p className="hover:text-cyan-600">Live </p>
               </Link>
             </div>
           </div>
@@ -188,13 +188,13 @@ const Projects = () => {
                 href="https://currencyconvertorreactapp.netlify.app/"
                 target="_blank"
               >
-                <p className="hover:text-cyan-600">Github ⎆</p>
+                <p className="hover:text-cyan-600">Github </p>
               </Link>
               <Link
                 href="https://countryproject-manual-deploy.netlify.app/"
                 target="_blank"
               >
-                <p className="hover:text-cyan-600">Live ⎆</p>
+                <p className="hover:text-cyan-600">Live </p>
               </Link>
             </div>
           </div>
@@ -230,13 +230,13 @@ const Projects = () => {
                 href="https://currencyconvertorreactapp.netlify.app/"
                 target="_blank"
               >
-                <p className="hover:text-cyan-600">Github ⎆</p>
+                <p className="hover:text-cyan-600">Github </p>
               </Link>
               <Link
                 href="https://hamburgermenuappnweb.netlify.app/"
                 target="_blank"
               >
-                <p className="hover:text-cyan-600">Live ⎆</p>
+                <p className="hover:text-cyan-600">Live </p>
               </Link>
             </div>
           </div>
@@ -272,13 +272,13 @@ const Projects = () => {
                 href="https://currencyconvertorreactapp.netlify.app/"
                 target="_blank"
               >
-                <p className="hover:text-cyan-600">Github ⎆</p>
+                <p className="hover:text-cyan-600">Github </p>
               </Link>
               <Link
                 href="https://weatherappchallengejs.netlify.app/"
                 target="_blank"
               >
-                <p className="hover:text-cyan-600">Live ⎆</p>
+                <p className="hover:text-cyan-600">Live </p>
               </Link>
             </div>
           </div>
@@ -314,13 +314,13 @@ const Projects = () => {
                 href="https://currencyconvertorreactapp.netlify.app/"
                 target="_blank"
               >
-                <p className="hover:text-cyan-600">Github ⎆</p>
+                <p className="hover:text-cyan-600">Github </p>
               </Link>
               <Link
                 href="https://dashboard-tesla-ui.vercel.app/dashboard"
                 target="_blank"
               >
-                <p className="hover:text-cyan-600">Live ⎆</p>
+                <p className="hover:text-cyan-600">Live </p>
               </Link>
             </div>
           </div>

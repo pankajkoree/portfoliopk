@@ -1,65 +1,38 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 const Footer = () => {
-  const router = useRouter();
-
-  const gotoGithub = () => {
-    router.push("https://github.com/pankajkoree");
-  };
-
-  const gotoLinkedIn = () => {
-    router.push("https://www.linkedin.com/in/pankaj-koree/");
-  };
-
-  const gotoSololearn = () => {
-    router.push("https://www.sololearn.com/en/profile/13478902");
-  };
-
-  const gotoYoutube = () => {
-    router.push("https://www.youtube.com/@pankajkori");
-  };
-
   return (
-    <div className="relative flex flex-col justify-center top-2 xl:top-4 gap-2 xl:gap-4 text-gray-600 dark:text-gray-400 text-[16px] xl:text-xl transition-colors duration-300">
-      <div className="relative flex justify-center gap-3 xl:gap-6">
-        <p
-          className="hover:cursor-pointer hover:text-blue-500 hover:underline dark:hover:text-blue-400 "
-          onClick={gotoGithub}
-        >
-          Github ↗
-        </p>
+    <div className="relative flex flex-col">
+      <div className="relative flex gap-4">
+        <Link href="https://github.com/pankajkoree" target="_blank">
+          <p className="hover:cursor-pointer hover:text-cyan-600">Github</p>
+        </Link>
 
-        <p
-          className="hover:cursor-pointer hover:text-blue-500 hover:underline dark:hover:text-blue-400 "
-          onClick={gotoLinkedIn}
-        >
-          Linkedin ↗
-        </p>
+        <Link href="https://www.linkedin.com/in/pankaj-koree/" target="_blank">
+          <p className="hover:cursor-pointer hover:text-cyan-600">LinkedIn</p>
+        </Link>
 
-        <p
-          className="hover:cursor-pointer hover:text-blue-500 hover:underline dark:hover:text-blue-400 "
-          onClick={gotoYoutube}
+        <Link
+          href="https://www.sololearn.com/en/profile/13478902"
+          target="_blank"
         >
-          Youtube ↗
-        </p>
+          <p className="hover:cursor-pointer hover:text-cyan-600">Sololearn</p>
+        </Link>
 
-        <p
-          className="hover:cursor-pointer hover:text-blue-500 hover:underline dark:hover:text-blue-400 "
-          onClick={gotoSololearn}
-        >
-          SoloLearn ↗
-        </p>
+        <Link href="https://www.youtube.com/@pankajkori" target="_blank">
+          <p className="hover:cursor-pointer hover:text-cyan-600">Youtube</p>
+        </Link>
       </div>
 
       <div className="relative flex justify-center">
         <p>
           © 2024{" "}
           <Link
-            className="underline hover:text-blue-500 dark:hover:text-blue-400"
+            className="underline hover:text-cyan-600"
             href="https://github.com/pankajkoree"
+            target="_blank"
           >
             Pankaj Kori
           </Link>{" "}
