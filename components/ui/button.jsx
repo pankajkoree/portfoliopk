@@ -17,13 +17,13 @@ const buttonVariants = cva(
           "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
         language: "border border-blue-400",
         submit:
-          " bg-blue-400 shadow-sm hover:bg-green-600 text-white text-xl h-[48px] rounded-xl",
+          "hover:cursor-pointer border rounded-none font-bold hover:text-green-600 dark:border-amber-50",
         live: "hover:bg-purple-500 border-2 border-purple-500 hover:border-none dark:shadow-sm text-purple-500 hover:text-white text-xl h-[44px] w-[50%]",
         secondary:
           "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        nav: "text-[18px] underline-offset-4 hover:underline text-gray-700 hover:cursor-pointer dark:text-white hover:text-cyan-600 dark:hover:text-cyan-600",
+        nav: "text-[18px] font-bold underline-offset-4 hover:underline text-gray-700 hover:cursor-pointer dark:text-white hover:text-cyan-600 dark:hover:text-cyan-600",
       },
       size: {
         default: "h-9 px-4 py-2",

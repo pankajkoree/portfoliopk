@@ -30,13 +30,17 @@ const Contact = () => {
       <h1 className="text-xl font-bold">Contact</h1>
       {/* end Navbar heading */}
 
-      <div>
-        <p>
+      <div className="relative flex flex-col justify-center">
+        <p className="text-center p-2">
           Feel free to reach out if you have any questions or would like to
           collaborate!
         </p>
 
-        <form onSubmit={handleSubmit}>
+        {/* form */}
+        <form
+          onSubmit={handleSubmit}
+          className="relative flex flex-col p-2 gap-6"
+        >
           <div className="flex flex-col">
             <Label htmlFor="name">Name:</Label>
             <Input
@@ -76,6 +80,8 @@ const Contact = () => {
             </Button>
           </div>
         </form>
+
+        {/* end form */}
       </div>
     </div>
   );
