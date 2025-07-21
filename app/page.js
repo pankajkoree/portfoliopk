@@ -11,6 +11,7 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import { Toaster } from "react-hot-toast";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -110,6 +111,7 @@ export default function Home() {
           {/* end footer */}
         </div>
       </div>
+      <Toaster position="top-center" reverseOrder={false} />
     </div>
   );
 }

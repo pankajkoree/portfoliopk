@@ -2,6 +2,7 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import { Textarea } from "./ui/textarea";
+import toast from "react-hot-toast";
 
 const Contact = () => {
   const handleSubmit = async (e) => {
@@ -22,6 +23,9 @@ const Contact = () => {
     const result = await response.json();
     if (result.success) {
       e.target.reset();
+      toast.success("Message sent successfully.");
+    } else {
+      toast.error("Failed to send the message");
     }
   };
   return (
