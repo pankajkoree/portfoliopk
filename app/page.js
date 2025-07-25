@@ -100,15 +100,14 @@ export default function Home() {
           {/* contact */}
 
           {/* footer */}
-
           <div
             id="contact"
             className="relative flex justify-center scroll-mt-16 top-24"
           >
             <Footer />
           </div>
-
           {/* end footer */}
+          
         </div>
       </div>
       {/* toaster for notification */}
