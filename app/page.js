@@ -107,11 +107,14 @@ export default function Home() {
             <Footer />
           </div>
           {/* end footer */}
-          
         </div>
       </div>
+
       {/* toaster for notification */}
+      
       <Toaster position="top-center" reverseOrder={false} />
+
+      {/* toaster for notification */}
     </div>
   );
 }
