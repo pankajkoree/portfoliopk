@@ -1,6 +1,25 @@
+import { useState } from "react";
 import { Button } from "./ui/button";
 
 const NavigationBar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const gotoHome = () => {
+    handleDirectory("home", "/");
+  };
+
+  const gotoSkills = () => {
+    handleDirectory("skills", "/skills");
+  };
+
+  const gotoProjects = () => {
+    handleDirectory("projects", "/projects");
+  };
+
+  const gotoContact = () => {
+    handleDirectory("contact", "/contact");
+  };
+
   const handleDirectory = (id, path) => {
     window.history.pushState(null, "", path);
 
@@ -13,27 +32,41 @@ const NavigationBar = () => {
 
   return (
     <div>
-      <Button variant="nav" onClick={() => handleDirectory("home", "/")}>
-        Home
-      </Button>
-      <Button
-        variant="nav"
-        onClick={() => handleDirectory("skills", "/skills")}
-      >
-        Skills
-      </Button>
-      <Button
-        variant="nav"
-        onClick={() => handleDirectory("projects", "/projects")}
-      >
-        Projects
-      </Button>
-      <Button
-        variant="nav"
-        onClick={() => handleDirectory("contact", "/contact")}
-      >
-        Contact
-      </Button>
+      {/* mobile navigation */}
+
+      {menuOpen && (
+        <div>
+          <Button variant="nav" onClick={gotoHome}>
+            Home
+          </Button>
+          <Button variant="nav" onClick={gotoSkills}>
+            Skills
+          </Button>
+          <Button variant="nav">Projects</Button>
+          <Button variant="nav" onClick={gotoContact}>
+            Contact
+          </Button>
+        </div>
+      )}
+
+      {/* mobile navigation */}
+
+      {/* desktop naviagtion */}
+      <div>
+        <Button variant="nav" onClick={gotoHome}>
+          Home
+        </Button>
+        <Button variant="nav" onClick={gotoSkills}>
+          Skills
+        </Button>
+        <Button variant="nav" onClick={gotoProjects}>
+          Projects
+        </Button>
+        <Button variant="nav" onClick={gotoContact}>
+          Contact
+        </Button>
+      </div>
+      {/* end desktop navigation */}
     </div>
   );
 };

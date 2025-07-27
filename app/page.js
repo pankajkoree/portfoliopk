@@ -111,7 +111,7 @@ export default function Home() {
       </div>
 
       {/* toaster for notification */}
-      
+
       <Toaster position="top-center" reverseOrder={false} />
 
       {/* toaster for notification */}
