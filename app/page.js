@@ -12,6 +12,7 @@ import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
+import NavigationBarMobile from "@/components/NavigationBarMobile";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -27,7 +28,7 @@ export default function Home() {
     }
   };
 
-  const toogleMenu = () => {
+  const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
   };
   useEffect(() => {
@@ -48,19 +49,33 @@ export default function Home() {
     <div className="relative flex flex-col md:flex-row lg:flex-row xl:flex-row  justify-center w-full">
       {/* mobile navigation */}
 
-      {/*  */}
-
       {/* mobile menu icon */}
       <div className="relative flex justify-between p-2 md:hidden lg:hidden xl:hidden">
-        <div>
+        {menuOpen ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-6 h-6 text-black dark:text-white"
+            className="w-6 h-6 cursor-pointer text-black dark:text-white"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
             strokeWidth="2"
-            onClick={toogleMenu}
+            onClick={toggleMenu}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        ) : (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-6 h-6 cursor-pointer text-black dark:text-white"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth="2"
+            onClick={toggleMenu}
           >
             <path
               strokeLinecap="round"
@@ -68,7 +83,7 @@ export default function Home() {
               d="M4 6h16M4 12h16M4 18h16"
             />
           </svg>
-        </div>
+        )}
 
         <div className="relative flex hover:cursor-pointer">
           <div onClick={changeTheme}>
@@ -98,8 +113,9 @@ export default function Home() {
       {/* end mobile menu icon */}
 
       {menuOpen && (
-        <div>
-          <NavigationBar />
+        <div className="relative flex">
+
+          <NavigationBarMobile />
         </div>
       )}
       {/* end mobile navigation */}
@@ -107,7 +123,7 @@ export default function Home() {
       <div className="relative flex flex-col justify-center w-[30%]">
         {/* navigation bar */}
         {/* desktop navigation */}
-        <div className="hidden sticky top-0 z-50 sm:flex items-center justify-center w-full xl:gap-12 p-8 h-12 backdrop-blur-xl bg-white dark:bg-[#18181B]">
+        <div className="hidden sm:flex sticky top-0 z-50 items-center justify-center w-full xl:gap-12 p-8 h-12 backdrop-blur-xl bg-white dark:bg-[#18181B]">
           <div className="relative flex justify-center">
             <NavigationBar />
           </div>
