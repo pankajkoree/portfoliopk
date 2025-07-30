@@ -1,37 +1,23 @@
+import { useRouter } from "next/navigation";
 import { Button } from "./ui/button";
 
 const NavigationBarMobile = () => {
-  const gotoHome = () => {
-    handleDirectory("home", "/");
-  };
+  const router = useRouter();
 
   const gotoSkills = () => {
-    handleDirectory("skills", "/skills");
+    router.push("/Skills");
   };
 
   const gotoProjects = () => {
-    handleDirectory("projects", "/projects");
+    router.push("/Projects");
   };
 
   const gotoContact = () => {
-    handleDirectory("contact", "/contact");
-  };
-
-  const handleDirectory = (id, path) => {
-    window.history.pushState(null, "", path);
-
-    const component = document.getElementById(id);
-
-    if (component) {
-      component.scrollIntoView({ behaviour: "smooth" });
-    }
+    router.push("/Contact");
   };
 
   return (
-    <div className="relative flex flex-col gap-12 top-8 items-start">
-      <Button variant="nav" onClick={gotoHome}>
-        Home
-      </Button>
+    <div className="relative flex flex-col gap-4 h-32 bg-red-400 w-full top-8 items-start">
       <Button variant="nav" onClick={gotoSkills}>
         Skills
       </Button>

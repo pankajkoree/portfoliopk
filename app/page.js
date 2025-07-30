@@ -114,8 +114,43 @@ export default function Home() {
 
       {menuOpen && (
         <div className="relative flex">
+          <div className="relative flex w-full">
+            <NavigationBarMobile />
+          </div>
+        </div>
+      )}
 
-          <NavigationBarMobile />
+      {!menuOpen && (
+        <div>
+          {/* home */}
+          <div id="home" className="">
+            <HomePage />
+          </div>
+          {/* home */}
+
+          {/* skills */}
+          <div id="skills" className="">
+            <Skills />
+          </div>
+          {/* skills */}
+
+          {/* projects */}
+          <div id="projects" className="">
+            <Projects />
+          </div>
+          {/* projects */}
+
+          {/* contact */}
+          <div id="contact" className="">
+            <Contact />
+          </div>
+          {/* contact */}
+
+          {/* footer */}
+          <div id="contact" className="">
+            <Footer />
+          </div>
+          {/* end footer */}
         </div>
       )}
       {/* end mobile navigation */}
