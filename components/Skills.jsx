@@ -9,13 +9,11 @@ const Skills = () => {
         {/* heading */}
         <div>
           <h1 className="text-xl font-bold">✨Frontend</h1>
-          <p className="text-xl">
-            Building responsive and modern interfaces
-          </p>
+          <p className="text-xl">Building responsive and modern interfaces</p>
         </div>
         {/* end heading */}
         {/* image and caption */}
-        <div className="relative flex gap-8">
+        <div className="relative flex md:gap-8">
           <div className="relative flex flex-col items-center p-2">
             <Image
               src="/javascript.png"
@@ -78,14 +76,12 @@ const Skills = () => {
         {/* heading */}
         <div>
           <h1 className="text-xl font-bold">✨Backend</h1>
-          <p className="text-xl">
-            Creating robust server-side applications
-          </p>
+          <p className="text-xl">Creating robust server-side applications</p>
         </div>
         {/* end heading */}
 
         {/* images and caption */}
-        <div className="relative flex gap-8">
+        <div className="relative flex md:gap-8">
           <div className="relative flex flex-col items-center p-2">
             <Image
               src="/nodejs.png"
@@ -142,7 +138,7 @@ const Skills = () => {
         </div>
         {/* end heading */}
         {/* images and caption */}
-        <div className="relative flex gap-8">
+        <div className="relative flex md:gap-8">
           <div className="relative flex flex-col items-center p-2">
             <Image
               src="/git.png"

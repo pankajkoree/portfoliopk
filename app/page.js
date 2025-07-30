@@ -78,10 +78,7 @@ export default function Home() {
 
         <div>
           {/* home */}
-          <div
-            id="home"
-            className="relative flex scroll-mt-16"
-          >
+          <div id="home" className="relative flex p-2 md:p-0 md:scroll-mt-16">
             <HomePage />
           </div>
           {/* home */}
@@ -89,7 +86,7 @@ export default function Home() {
           {/* skills */}
           <div
             id="skills"
-            className="relative sm:flex lg:flex xl:flex scroll-mt-16 top-12"
+            className="relative flex p-2 md:p-0 md:scroll-mt-16 md:top-12"
           >
             <Skills />
           </div>
@@ -98,7 +95,7 @@ export default function Home() {
           {/* projects */}
           <div
             id="projects"
-            className="relative sm:flex lg:flex xl:flex scroll-mt-16 top-24"
+            className="relative flex p-2 md:p-0 md:scroll-mt-16 md:top-24"
           >
             <Projects />
           </div>
@@ -107,17 +104,14 @@ export default function Home() {
           {/* contact */}
           <div
             id="contact"
-            className="relative sm:flex lg:flex xl:flex  scroll-mt-16 top-24"
+            className="relative flex p-2 md:p-0 md:scroll-mt-16 md:top-24"
           >
             <Contact />
           </div>
           {/* contact */}
 
           {/* footer */}
-          <div
-            id="contact"
-            className="relative sm:flex lg:flex xl:flex justify-center scroll-mt-16 top-24"
-          >
+          <div className="relative flex p-2 md:p-0 justify-center md:scroll-mt-16 md:top-24">
             <Footer />
           </div>
           {/* end footer */}
