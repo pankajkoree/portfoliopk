@@ -16,8 +16,9 @@ import { Toaster } from "react-hot-toast";
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const changeTheme = () => {
-    setIsDarkMode(!isDarkMode);
-    if (!isDarkMode) {
+    const newTheme = !isDarkMode;
+    setIsDarkMode(newTheme);
+    if (newTheme) {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
     } else {
@@ -25,6 +26,14 @@ export default function Home() {
       localStorage.setItem("theme", "light");
     }
   };
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      document.documentElement.classList.add("dark");
+      setIsDarkMode(true);
+    }
+  }, []);
 
   useEffect(() => {
     const path = window.location.pathname;
