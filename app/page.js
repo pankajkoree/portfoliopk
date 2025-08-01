@@ -51,10 +51,10 @@ export default function Home() {
 
   return (
     <div className="relative flex flex-col md:flex-row lg:flex-row xl:flex-row  justify-center w-full">
-      <div className="relative flex flex-col justify-center xl:w-[30%]">
+      <div className="relative flex flex-col justify-center md:w-[80%] xl:w-[30%]">
         {/* navigation bar */}
         {/* desktop navigation */}
-        <div className="hidden sm:flex sticky top-0 z-50 items-center justify-center w-full xl:gap-12 p-8 h-12 backdrop-blur-xl bg-white dark:bg-[#18181B]">
+        <div className="hidden sm:flex sticky top-0 z-50 items-center justify-center w-full md:gap-4 lg:gap-12 p-8 h-12 backdrop-blur-xl bg-white dark:bg-[#18181B]">
           <div className="relative flex justify-center">
             <NavigationBar />
           </div>
@@ -87,7 +87,10 @@ export default function Home() {
 
         <div>
           {/* home */}
-          <div id="home" className="relative flex p-2 md:p-0 md:scroll-mt-16">
+          <div
+            id="home"
+            className="relative flex p-2 md:p-2 md:scroll-mt-16 lg:p-0 lg:scroll-mt-16"
+          >
             <HomePage />
           </div>
           {/* home */}
@@ -95,7 +98,7 @@ export default function Home() {
           {/* skills */}
           <div
             id="skills"
-            className="relative flex p-2 md:p-0 md:scroll-mt-16 md:top-12"
+            className="relative flex p-2 md:p-2 md:scroll-mt-16 lg:p-0 lg:scroll-mt-16 lg:top-12"
           >
             <Skills />
           </div>
@@ -104,7 +107,7 @@ export default function Home() {
           {/* projects */}
           <div
             id="projects"
-            className="relative flex p-2 md:p-0 md:scroll-mt-16 md:top-24"
+            className="relative flex p-2 md:p-2 md:scroll-mt-16 lg:p-0 lg:scroll-mt-16 lg:top-24"
           >
             <Projects />
           </div>
@@ -113,14 +116,14 @@ export default function Home() {
           {/* contact */}
           <div
             id="contact"
-            className="relative flex p-2 md:p-0 md:scroll-mt-16 md:top-24"
+            className="relative flex p-2 md:p-2 md:scroll-mt-16 lg:p-0 lg:scroll-mt-16 lg:top-24"
           >
             <Contact />
           </div>
           {/* contact */}
 
           {/* footer */}
-          <div className="relative flex p-2 md:p-0 justify-center md:scroll-mt-16 md:top-24">
+          <div className="relative flex p-2 md:p-2 md:scroll-mt-16 lg:p-0 justify-center lg:scroll-mt-16 lg:top-24">
             <Footer />
           </div>
           {/* end footer */}
