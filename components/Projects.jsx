@@ -143,15 +143,12 @@ const Projects = () => {
             </div>
             <div className="relative flex gap-4">
               <Link
-                href="https://currencyconvertorreactapp.netlify.app/"
+                href="https://github.com/pankajkoree/focusontoday"
                 target="_blank"
               >
                 <p className="hover:text-cyan-600">Github </p>
               </Link>
-              <Link
-                href="https://focusontoday-vanillajs.netlify.app/"
-                target="_blank"
-              >
+              <Link href="https://focusontoday-tan.vercel.app/" target="_blank">
                 <p className="hover:text-cyan-600">Live </p>
               </Link>
             </div>
