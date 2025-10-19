@@ -15,25 +15,23 @@ import { Toaster } from "react-hot-toast";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const changeTheme = () => {
-    const newTheme = !isDarkMode;
-    setIsDarkMode(newTheme);
-    if (newTheme) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-  };
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-      document.documentElement.classList.add("dark");
-      setIsDarkMode(true);
-    }
+    setIsMounted(true);
+    const storedTheme = localStorage.getItem("theme");
+    const dark = storedTheme === "dark";
+    document.documentElement.classList.toggle("dark", dark);
+    setIsDarkMode(dark);
   }, []);
+
+  useEffect(() => {
+    if (!isMounted) return;
+    document.documentElement.classList.toggle("dark", isDarkMode);
+    localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+  }, [isDarkMode, isMounted]);
+
+  const changeTheme = () => setIsDarkMode((prev) => !prev);
 
   useEffect(() => {
     const path = window.location.pathname;
@@ -48,6 +46,12 @@ export default function Home() {
       }
     }
   }, []);
+
+  if (!isMounted) {
+    return (
+      <div className="h-6 w-6 rounded bg-gray-300 dark:bg-gray-600 animate-pulse" />
+    );
+  }
 
   return (
     <div className="relative flex flex-col md:flex-row lg:flex-row xl:flex-row  justify-center w-full">
