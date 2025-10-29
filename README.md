@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio : Pankaj Kori
 
-## Getting Started
+A modern and responsive personal portfolio website built with Next.js, showcasing projects, skills, and professional experience.
 
-First, run the development server:
+## 🚀 About
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+This is a personal portfolio website built using Next.js 14+ with App Router, designed to present professional work, skills, and achievements in an elegant and performant manner. The project leverages the latest Next.js features including automatic font optimization with Geist font family.
+
+## ✨ Features
+
+- **Modern Tech Stack**: Built with Next.js 14+ (App Router)
+- **Font Optimization**: Automatic font optimization using next/font with Geist font family
+- **Fast Performance**: Server-side rendering and static generation for optimal performance
+- **Responsive Design**: Fully responsive across all devices
+- **Hot Reload**: Instant updates during development
+- **SEO Optimized**: Built-in SEO capabilities with Next.js metadata API
+- **Easy Deployment**: Ready to deploy on Vercel with one click
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 14+](https://nextjs.org/)
+- **Font**: [Geist](https://vercel.com/font) - Vercel's new font family
+- **Runtime**: Node.js
+- **Package Managers**: npm, yarn, pnpm, or bun
+
+## 📋 Prerequisites
+
+Before you begin, ensure you have installed:
+
+- Node.js (v18.17 or higher recommended)
+- npm, yarn, pnpm, or bun package manager
+
+## 🔧 Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/pankajkoree/portfoliopk.git
+   cd portfoliopk
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   # or
+   bun install
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   # or
+   bun dev
+   ```
+
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000) to see the result
+
+## 📁 Project Structure
+
+```
+portfoliopk/
+├── app/
+│   ├── page.js           # Main landing page
+│   ├── layout.js         # Root layout with font optimization
+│   └── ...               # Additional pages and routes
+├── public/
+│   └── ...               # Static assets
+├── package.json
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Customization
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Editing Content
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file thanks to Next.js hot reload feature.
 
-## Learn More
+### Adding Pages
 
-To learn more about Next.js, take a look at the following resources:
+Create new pages by adding files in the `app` directory following Next.js App Router conventions.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Styling
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The project uses Next.js built-in CSS support. You can:
+- Add global styles in `app/globals.css`
+- Use CSS Modules for component-specific styles
+- Integrate Tailwind CSS or other styling solutions
 
-## Deploy on Vercel
+## 🚀 Deployment
+
+### Deploy on Vercel (Recommended)
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push your code to GitHub
+2. Import your repository to Vercel
+3. Vercel will automatically detect Next.js and configure the build settings
+4. Your site will be deployed with a production URL
+
+
+## 👤 Author
+
+**Pankaj Koree**
+
+- GitHub: [@pankajkoree](https://github.com/pankajkoree)
+- Repository: [portfoliopk](https://github.com/pankajkoree/portfoliopk)
+
+## 🙏 Acknowledgments
+
+- Built with [Next.js](https://nextjs.org/) by Vercel
+- Font optimization using [Geist](https://vercel.com/font)
+- Created with [create-next-app](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
