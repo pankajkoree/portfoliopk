@@ -8,7 +8,7 @@ This is a personal portfolio website built using Next.js 14+ with App Router, de
 
 ## ✨ Features
 
-- **Modern Tech Stack**: Built with Next.js 14+ (App Router)
+- **Modern Tech Stack**: Built with Next.js 15+ (App Router)
 - **Font Optimization**: Automatic font optimization using next/font with Geist font family
 - **Fast Performance**: Server-side rendering and static generation for optimal performance
 - **Responsive Design**: Fully responsive across all devices
