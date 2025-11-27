@@ -4,7 +4,7 @@ A modern and responsive personal portfolio website built with Next.js, showcasin
 
 ## 🚀 About
 
-This is a personal portfolio website built using Next.js 14+ with App Router, designed to present professional work, skills, and achievements in an elegant and performant manner. The project leverages the latest Next.js features including automatic font optimization with Geist font family.
+This is a personal portfolio website built using Next.js 15+ with App Router, designed to present professional work, skills, and achievements in an elegant and performant manner. The project leverages the latest Next.js features including automatic font optimization with Geist font family.
 
 ## ✨ Features
 
